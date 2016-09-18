@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Codigo a Enviar"
+        android:id="@+id/textView_CodigoEnviar"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:textColor="#071bff"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Este es el Codigo"
+        android:id="@+id/tvCodigo"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="98.97"
+        android:nestedScrollingEnabled="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
+        android:text="Codigo Actual"
+        android:id="@+id/tvCodigoActual"
+        android:layout_gravity="center_horizontal"
+        android:textSize="26dp"
+        android:gravity="center_vertical"
+        android:textColor="#dc6262" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4"
+        android:rowCount="3">
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/a"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:id="@+id/imageButtona"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/b"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtonb"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/h"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtonh"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/d"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtond"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/e"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtone"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/f"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtonf"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/g"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtong"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/c"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtonc"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="onClick"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salto"
+            android:id="@+id/buttonSalto"
+            android:layout_gravity="right"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Ant"
+            android:id="@+id/botton_Eliminar"
+            style="?android:attr/buttonStyleSmall"
+            android:textColor="#fc0505"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>

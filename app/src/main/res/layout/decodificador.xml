@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button_verImagen"
+        android:layout_gravity="right"
+        android:drawableBottom="@android:drawable/ic_menu_gallery"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Informacion Generada"
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:textColor="#5c0404" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_DatoFinal"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.8"
+        android:nestedScrollingEnabled="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ultimos Bits Registrados"
+        android:id="@+id/textView_Generado"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="bottom" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom|center_horizontal"
+        android:layout_margin="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/button_1"
+            android:textColor="#fa0a0a"
+            android:onClick="onClick"
+            android:typeface="sans"
+            android:textSize="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salto"
+            android:id="@+id/button_salto"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="FuncionSalto"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/button_0"
+            android:textColor="#061e93"
+            android:onClick="onClick"
+            android:textSize="20dp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</LinearLayout>
