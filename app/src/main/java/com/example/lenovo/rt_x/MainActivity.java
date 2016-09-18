@@ -1,12 +1,15 @@
 package com.example.lenovo.rt_x;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG ="RX" ;
@@ -83,7 +86,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Rellenar(h);
                 break;
             case R.id.botton_Eliminar:
-                Snackbar.make(v, "Recurso en Construcción", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                //Snackbar.make(v, "Recurso en Construcción", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                if(TvCodigo.length()!=0){
+                    TvCodigo.setText(TvCodigo.getText().subSequence(0, TvCodigo.length() - 4));
+                    TvCodigoActual.setText("");
+                }else{
+                    Toast.makeText(this, "Accion Invalida", Toast.LENGTH_SHORT).show();
+                    Vibrator vibracion = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    vibracion.vibrate(200);
+                }
+
                 break;
             case R.id.buttonSalto:
                 Rellenar(salto);

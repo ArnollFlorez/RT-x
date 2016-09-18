@@ -2,6 +2,8 @@ package com.example.lenovo.rt_x;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -35,6 +37,7 @@ public class decodificador extends AppCompatActivity implements View.OnClickList
     boolean BanderaTexto=true;
     boolean FinCelda=true;
     private MediaPlayer sonido_error;
+    private ColorStateList ColorBase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,8 @@ public class decodificador extends AppCompatActivity implements View.OnClickList
 
         BitsFinales=(TextView)findViewById(R.id.textView_DatoFinal);
         BitsIntemedios=(TextView)findViewById(R.id.textView_Generado);
+
+        ColorBase=BitsIntemedios.getTextColors();
 
     }
 
@@ -77,7 +82,6 @@ public class decodificador extends AppCompatActivity implements View.OnClickList
         Intent intent = new Intent(this,matriz.class);
         intent.putExtra("VECTOR",Vector_Datos);
         startActivity(intent);
-
         Log.i("RX", "VerImagen: "+ Vector_Datos );
     }
 
@@ -100,6 +104,8 @@ public class decodificador extends AppCompatActivity implements View.OnClickList
     public void GenerarDato(View v){
         String captura = BitsIntemedios.getText().toString();
 
+        BitsIntemedios.setTextColor(ColorBase);
+
         if(captura.length()==4){
             Log.i(TAG, "GenerarDato: verifico 4 ");
           if(DatoIngresadoFull(captura,a)||DatoIngresadoFull(captura,b)||DatoIngresadoFull(captura,c)||
@@ -110,6 +116,7 @@ public class decodificador extends AppCompatActivity implements View.OnClickList
 
              else{
               Log.i(TAG, "GenerarDato: Hubo error");
+                BitsIntemedios.setTextColor(Color.RED);
                 Snackbar.make(v, "Hay un Error en esta Transmisión", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
                 Vibrator vibracion = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibracion.vibrate(300);
