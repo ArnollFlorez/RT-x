@@ -67,6 +67,16 @@ public class decodificador extends AppCompatActivity implements View.OnClickList
                 EscrituradeBits("1",v);
                 break;
 
+            case R.id.button_ElimDeco:
+                if(BitsFinales.length()!=0){
+                    BitsFinales.setText(BitsFinales.getText().subSequence(0, BitsFinales.length() - 4));
+                }else{
+                    Toast.makeText(this, "Accion Invalida", Toast.LENGTH_SHORT).show();
+                    Vibrator vibracion = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    vibracion.vibrate(200);
+                }
+                break;
+
 
             case R.id.button_verImagen:
                 Snackbar.make(v,"Recurso en Construcción", Snackbar.LENGTH_SHORT).setAction("Action", null).show();

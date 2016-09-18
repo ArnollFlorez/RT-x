@@ -27,7 +27,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView_DatoFinal"
         android:gravity="center_horizontal"
-        android:layout_weight="0.8"
+        android:layout_weight="0.84"
         android:nestedScrollingEnabled="true"
         android:padding="5dp" />
 
@@ -81,5 +81,14 @@
             android:textSize="20dp"
             android:typeface="sans" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Ant"
+        android:id="@+id/button_ElimDeco"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#dc0404"
+        android:onClick="onClick" />
 
 </LinearLayout>

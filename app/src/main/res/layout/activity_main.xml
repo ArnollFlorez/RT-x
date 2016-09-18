@@ -58,11 +58,55 @@
         <ImageButton
             android:layout_width="@dimen/tamañoBotones"
             android:layout_height="@dimen/tamañoBotones"
-            android:src="@drawable/b"
+            android:src="@drawable/g"
             android:cropToPadding="true"
             android:layout_margin="3dp"
-            android:id="@+id/imageButtonb"
+            android:id="@+id/imageButtong"
             android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/e"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtone"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/f"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtonf"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/d"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtond"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:src="@drawable/c"
+            android:cropToPadding="true"
+            android:layout_margin="3dp"
+            android:id="@+id/imageButtonc"
+            android:layout_row="0"
             android:layout_column="2"
             android:onClick="onClick"/>
 
@@ -74,61 +118,17 @@
             android:layout_margin="3dp"
             android:id="@+id/imageButtonh"
             android:layout_row="1"
-            android:layout_column="0"
-            android:onClick="onClick"/>
-
-        <ImageButton
-            android:layout_width="@dimen/tamañoBotones"
-            android:layout_height="@dimen/tamañoBotones"
-            android:src="@drawable/d"
-            android:cropToPadding="true"
-            android:layout_margin="3dp"
-            android:id="@+id/imageButtond"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:onClick="onClick"/>
-
-        <ImageButton
-            android:layout_width="@dimen/tamañoBotones"
-            android:layout_height="@dimen/tamañoBotones"
-            android:src="@drawable/e"
-            android:cropToPadding="true"
-            android:layout_margin="3dp"
-            android:id="@+id/imageButtone"
-            android:layout_row="0"
             android:layout_column="3"
             android:onClick="onClick"/>
 
         <ImageButton
             android:layout_width="@dimen/tamañoBotones"
             android:layout_height="@dimen/tamañoBotones"
-            android:src="@drawable/f"
+            android:src="@drawable/b"
             android:cropToPadding="true"
             android:layout_margin="3dp"
-            android:id="@+id/imageButtonf"
+            android:id="@+id/imageButtonb"
             android:layout_row="0"
-            android:layout_column="2"
-            android:onClick="onClick"/>
-
-        <ImageButton
-            android:layout_width="@dimen/tamañoBotones"
-            android:layout_height="@dimen/tamañoBotones"
-            android:src="@drawable/g"
-            android:cropToPadding="true"
-            android:layout_margin="3dp"
-            android:id="@+id/imageButtong"
-            android:layout_row="1"
-            android:layout_column="3"
-            android:onClick="onClick"/>
-
-        <ImageButton
-            android:layout_width="@dimen/tamañoBotones"
-            android:layout_height="@dimen/tamañoBotones"
-            android:src="@drawable/c"
-            android:cropToPadding="true"
-            android:layout_margin="3dp"
-            android:id="@+id/imageButtonc"
-            android:layout_row="1"
             android:layout_column="1"
             android:onClick="onClick"/>
 
